@@ -1,0 +1,152 @@
+.account-route-container {
+  min-height: 100vh;
+  background-color: #131313;
+  display: flex;
+  flex-direction: column;
+  font-family: 'HK Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, sans-serif;
+}
+
+/* White Content Area */
+.account-body-container {
+  flex-grow: 1;
+  background-color: #ffffff;
+  padding: 120px 60px 80px 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.account-content-card {
+  width: 100%;
+  max-width: 900px;
+}
+
+.account-main-heading {
+  font-size: 32px;
+  font-weight: 700;
+  color: #121826;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.account-divider {
+  border: none;
+  border-top: 1px solid #cbd5e1;
+  margin: 18px 0;
+}
+
+.account-section-row {
+  display: flex;
+  align-items: flex-start;
+  padding: 8px 0;
+}
+
+.account-section-label {
+  width: 180px;
+  color: #94a3b8;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.account-section-value-wrapper {
+  flex-grow: 1;
+}
+
+.account-user-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 10px 0;
+}
+
+/* Password Row */
+.account-password-row {
+  display: flex;
+  align-items: center;
+}
+
+.account-password-label {
+  font-size: 15px;
+  color: #64748b;
+  font-weight: 500;
+  margin: 0;
+}
+
+.account-password-value {
+  font-size: 15px;
+  color: #64748b;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* Plan Details */
+.plan-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.account-plan-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+}
+
+.account-plan-badge {
+  border: 1px solid #1e293b;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+  display: inline-block;
+}
+
+/* Red Centered Logout Button */
+.account-logout-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+.account-logout-btn {
+  background-color: #e50914;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s ease;
+}
+
+.account-logout-btn:hover {
+  background-color: #c11119;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  .account-body-container {
+    padding: 90px 24px 60px 24px;
+  }
+
+  .account-main-heading {
+    font-size: 26px;
+  }
+
+  .account-section-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .account-section-label {
+    width: 100%;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,146 @@
+.nav-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.search-nav-bg {
+  background-color: #131313;
+  background-image: none;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 60px;
+}
+
+.logo-nav-items {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.header-logo {
+  height: 36px;
+  width: auto;
+  cursor: pointer;
+}
+
+.nav-links-list {
+  display: flex;
+  list-style-type: none;
+  gap: 24px;
+  padding-left: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.nav-link {
+  color: #d1d5db;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-link:hover,
+.active-link {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.search-profile-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.search-icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  outline: none;
+}
+
+.profile-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Exact Search Bar Box as in the screenshot */
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #7e858e;
+  border-radius: 4px;
+  background-color: transparent;
+  height: 34px;
+  padding-left: 10px;
+  width: 250px;
+}
+
+.search-input-field {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: inherit;
+  flex-grow: 1;
+}
+
+.search-input-btn {
+  background-color: #333333;
+  border: none;
+  border-left: 1px solid #7e858e;
+  height: 100%;
+  padding: 0 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.search-input-btn:hover {
+  background-color: #444444;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-content {
+    padding: 16px 20px;
+  }
+
+  .header-logo {
+    height: 28px;
+  }
+
+  .logo-nav-items {
+    gap: 16px;
+  }
+
+  .nav-links-list {
+    display: none;
+  }
+
+  .search-bar-container {
+    width: 170px;
+  }
+}

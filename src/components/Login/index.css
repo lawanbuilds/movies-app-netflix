@@ -1,0 +1,138 @@
+.login-bg-container {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('https://res.cloudinary.com/dpn2veik7/image/upload/v1775114712/netfilx_1_fewaae.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: 'HK Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, sans-serif;
+}
+
+/* Top Logo Header */
+.login-header {
+  padding: 36px 48px 0 48px;
+  width: 100%;
+}
+
+.login-website-logo {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Center card wrapper */
+.login-card-wrapper {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+/* Semi-transparent dark card with subtle blur */
+.login-form-card {
+  background-color: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 440px;
+  padding: 44px 44px 40px 44px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+.login-title {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+.input-label {
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  margin-bottom: 8px;
+}
+
+.login-input {
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  height: 44px;
+  padding: 0 16px;
+  font-size: 14px;
+  outline: none;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.login-input:focus {
+  background-color: #3f3f3f;
+  box-shadow: 0 0 0 1px #e50914;
+}
+
+.error-message {
+  color: #e50914;
+  font-size: 12px;
+  font-weight: 500;
+  margin: -6px 0 16px 0;
+}
+
+.login-btn {
+  background-color: #e50914;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  height: 44px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease;
+  outline: none;
+}
+
+.login-btn:hover {
+  background-color: #d10712;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .login-header {
+    padding: 24px 20px 0 20px;
+  }
+
+  .login-website-logo {
+    height: 36px;
+  }
+
+  .login-card-wrapper {
+    padding: 16px;
+  }
+
+  .login-form-card {
+    padding: 32px 24px;
+    max-width: 360px;
+  }
+
+  .login-title {
+    font-size: 26px;
+    margin-bottom: 24px;
+  }
+}
